@@ -60,7 +60,6 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Your post has been added."
       );
     } catch (error) {
-      console.log(error);
       showNotification(
         "error",
         "Error adding post",
