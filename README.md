@@ -39,8 +39,8 @@ Assumptions:
 
 Challenges:
 
-- 1.Ensuring seamless UI behavior, such as toggling between creating and updating posts in the modal, while keeping the form data intact, proved to be challenging.
-- 2.Managing asynchronous data fetching (POST, PUT, DELETE requests) with error handling and displaying notifications required careful attention to API responses and user feedback.
+- Ensuring seamless UI behavior, such as toggling between creating and updating posts in the modal, while keeping the form data intact, proved to be challenging.
+- Managing asynchronous data fetching (POST, PUT, DELETE requests) with error handling and displaying notifications required careful attention to API responses and user feedback.
 
 Approximate Time Spent on the Assignment
 
