@@ -59,7 +59,7 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Post added successfully",
         "Your post has been added."
       );
-    } catch (error) {
+    } catch {
       showNotification(
         "error",
         "Error adding post",
@@ -105,7 +105,7 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Post updated successfully",
         "Your post has been updated."
       );
-    } catch (error) {
+    } catch {
       showNotification(
         "error",
         "Error updating post",
@@ -132,7 +132,7 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Post deleted successfully",
         "The post has been removed."
       );
-    } catch (error) {
+    } catch {
       showNotification(
         "error",
         "Error deleting post",
@@ -225,7 +225,12 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            editingPostId ? handelUpdatePost() : handleAddPost();
+
+            if (editingPostId) {
+              handelUpdatePost();
+            } else {
+              handleAddPost();
+            }
           }}
         >
           <div className="mb-4">
