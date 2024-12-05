@@ -14,7 +14,6 @@ type HomeClientProps = {
 export default function HomeClient({ initialPosts }: HomeClientProps) {
   const [Posts, setPosts] = useState<Post[]>(initialPosts);
   const [newPost, SetNewPost] = useState<NewPost>({ title: "", body: "" });
-  const [error, setError] = useState<string | null>(null);
   const [editingPostId, setEditingPostId] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -61,7 +60,6 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Your post has been added."
       );
     } catch (error) {
-      setError("Error adding post");
       console.log(error);
       showNotification(
         "error",
@@ -109,7 +107,6 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "Your post has been updated."
       );
     } catch (error) {
-      setError("Error updating post");
       showNotification(
         "error",
         "Error updating post",
@@ -137,7 +134,6 @@ export default function HomeClient({ initialPosts }: HomeClientProps) {
         "The post has been removed."
       );
     } catch (error) {
-      setError("Error deleting post");
       showNotification(
         "error",
         "Error deleting post",
