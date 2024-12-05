@@ -44,7 +44,7 @@ Challenges:
 
 Approximate Time Spent on the Assignment
 
-- Planning and Setup: 1 hours
+- Planning and Setup: 1 hour
 - Component Development: 4 hours
 - Bug Fixes and Final Adjustments: 2 hours
 - Total Time Spent: Approximately 7 hours
