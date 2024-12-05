@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React Post Management Application
 
-## Getting Started
+## Instructions to Run the Application
 
-First, run the development server:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/KarimMagdy96/next-dinamo.git
+   cd next-dinamo
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.Install Dependencies: Ensure you have Node.js and npm installed. Run the following command to install the necessary packages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3.Run the Development Server: To start the application locally, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm start
+This will launch the app in your browser at http://localhost:3000.
 
-## Learn More
+4.Build the Application for Production: If you're ready to deploy or create a production build, run:
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Notes on Assumptions Made or Challenges Faced
+Assumptions:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.The API used for post management (jsonplaceholder.typicode.com) is publicly accessible and does not require authentication.
+2.The application is designed to be a simple CRUD interface with state management via React (Next js) useState and minimal API handling.
+3.The use of Ant Design components (such as Modal, Table, and Button) is integrated to provide a polished UI.
 
-## Deploy on Vercel
+Challenges:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.Ensuring seamless UI behavior, such as toggling between creating and updating posts in the modal, while keeping the form data intact, proved to be challenging.
+2.Managing asynchronous data fetching (POST, PUT, DELETE requests) with error handling and displaying notifications required careful attention to API responses and user feedback.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Approximate Time Spent on the Assignment
+Planning and Setup: 1 hours
+Component Development: 4 hours
+Bug Fixes and Final Adjustments: 2 hours
+Total Time Spent: Approximately 7 hours
