@@ -10,16 +10,25 @@
 
 2.Install Dependencies: Ensure you have Node.js and npm installed. Run the following command to install the necessary packages:
 
-npm install
+```bash
+  npm install
+```
 
 3.Run the Development Server: To start the application locally, run:
 
+```bash
 npm start
+
+```
+
 This will launch the app in your browser at http://localhost:3000.
 
 4.Build the Application for Production: If you're ready to deploy or create a production build, run:
 
+```bash
+
 npm run build
+```
 
 Notes on Assumptions Made or Challenges Faced
 Assumptions:
