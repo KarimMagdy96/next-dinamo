@@ -17,7 +17,7 @@
 3.Run the Development Server: To start the application locally, run:
 
 ```bash
-npm start
+npm run dev
 
 ```
 
